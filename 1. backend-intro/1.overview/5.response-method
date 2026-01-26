@@ -1,0 +1,26 @@
+Response m bht different- different types k functions hota h.
+  >> aap chahe jitne types k different -different type k response bhej skte h.
+
+>>Basic string send krne ke liye ham, res.send() k use krte h.
+   >> Example:- 1. res.send() 
+   app.delete('/items/:id', (req,res) => {
+  res.send("got a DELETE request");
+})
+
+1. res.send()               = Send a response of various types.
+2. res.sendFile()           = Send a file as an octet stream.
+3. res.end()                = end of the response process.
+4. res.json()               = send a json response
+5. res.download()           = Prompt a file to be downloaded.
+6. res.rnder()              = Render a view template.
+
+
+2. res.sendFile() 
+   es.sendFile(__dirname + '/dummy.html');
+
+3. res.end()  
+  res.end(__dirname + '/index.html');
+
+4. res.json()
+   res.json({x:1, y:2,  });
+   

@@ -1,0 +1,19 @@
+Express ek tools box h, jiske andr bht diffrent - diffrent type k tools h, or mujhe use tools ki need padne wali h, to usko ham apne bag k andr include krke rakh lenge.
+
+1. const express = require ("express");
+    >> ise line k through apne Express ko include kr liya h, apne, module k andr
+      >> line no. 1 add hoti h, ek trh se use hoti h, express ko include krne k liye
+
+
+2. Let's say ham ab express k through app create krna chahta hu, to uska create krne k tarika kya h?
+   >> jab v express k sath ise function wale notion k use kr leta hu, to iske through hm kh skte h, ki mai ek express k aap intalize kr deta hu.
+     >> line no. 2 m ek application ko intalize kr rhe h.
+         >> const app = express();
+
+3.   Apki application kise n kise port p run hone wali h.
+     >> const port = 3000;
+        >> kise road p bht sara ghr h, mera ghar no.2 h, aap 2 no. ghar p jaoge tabhi mai jungi, kise or ghar k bhar koye hoga to mai ni jungi.
+           >> usi trh machine k pass bht sare port hote h, like:- 4000.5000,3000. ise sbme se bs 3000 wali p hi request aayega to mai jungi.
+              >> q ki mai apna application 3000 port p chaal rhi hu.
+                >> 3000 wale port p koye request aa rhi h, to mai jungi v or serve v krungi or koye need hoga to.
+                    >> q ki y mera port h.jo mere application k h.to meri application serve kregi.

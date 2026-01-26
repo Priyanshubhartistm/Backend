@@ -1,0 +1,21 @@
+1. maine bola / p aaoge to bird k home page h.
+
+2. /about p aaoge to bird k about bird wala page ayega. 
+
+to yaha maine birds k sare k  sare routs list down kr diye h.
+
+// define the home page route
+router.get('/', (req, res) => {
+  res.send('Birds home page')
+})
+// define the about route
+router.get('/about', (req, res) => {
+  res.send('About birds')
+})
+
+3. fir index.js m router files ko leke jayenge(means add krenge)
+   >> const birds = require('./routes/birds.js');
+      >> ab router file load hogi
+
+    >> app.use('/api', birds);
+      >> ab isko use v krwana h, to

@@ -1,0 +1,8 @@
+// express.js  = this is type of framework
+// react       = are library 
+
+1. Framework = jo v developement krte waqt jo v tools ki need apko padne wali h, yase bht sari chiz h, jaise rounting p apko kam krn h, midel best p apko kam krna h,to kch standard maintain kiye gye h, to use standard k use krke aap apne web application ko create krne wale h. 
+   >> To express.js apke web application process ko kahi n kahi ek organized way m kr deta h, or bht fast kr deta h.
+     >> backend journey ko smooth kr deta h.
+
+2. express.js  = kch set sof feature provide krwat h, jise aap apni web application ki creation journey ko smooth/powerful bana skte h.

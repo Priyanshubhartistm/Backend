@@ -1,0 +1,39 @@
+// BACKEND   = Brain OF THE APPLICATION (JO KAAM KARTA H)
+    >> >> Business LOGIC + DATABASE + SERVER SIDE PROGRAMMING + file handling + AUTHENTICATION + AUTHORIZATION + API ENDPOINTS + MIDDLEWARES + CACHING + SESSIONS + COOKIES + SECURITY MECHANISMS + PERFORMANCE OPTIMIZATION + SCALABILITY STRATEGIES + ERROR HANDLING + LOGGING + DEPLOYMENT + MAINTENANCE
+    y sab ek specific machine k andr hota h, jisko hum BACKEND bolte h.
+
+// FRONTEND  = FACE OF THE APPLICATION (JO USER KO DIKHTA H)
+    >> >> UI/UX DESIGN + HTML + CSS + JAVASCRIPT + RESPONSIVE DESIGN + FRAMEWORKS/LIBRARIES (REACT, ANGULAR, VUE) + STATE MANAGEMENT + ROUTING + FORMS + VALIDATION + ANIMATIONS + ACCESSIBILITY + PERFORMANCE OPTIMIZATION + CROSS-BROWSER COMPATIBILITY + DEBUGGING + BUILD TOOLS + DEPLOYMENT
+    y sab ek specific machine k andr hota h, jisko hum FRONTEND bolte h.
+    
+
+// BACKEND   = serve machine ka andr h.
+
+
+// BACKEND = 1stly when we talk about internet then, we get famous architect are called "c-s"
+
+Client -Server Architecture   = y ek machine hi hoti h. 
+
+1. Client = mera jo laptop h, oo ek Client hi h. or Client hamesa request hi krta h,ki mujhe xyz chiz chahiye.
+
+2. Server = Client k request ko full fill krne ke liye mujhe ek machine k pass hi jana hoga or oo machine ky h, server .(jo Client  request ko full - fill kr rhi h, usko aap as server count kr skte h)
+  >> server k kam hota h, jo request ayi h, usko serve krn, or ek response ko waps bhejna, ki y lo tmhra response.
+
+    1. ek machine ka kam hota h        = request ko raise krna ki, dhudh/sugar etc chahiya
+
+
+    2. dusre machine ka kam hota h      = request ko serve krn ,ki dhudh/sugar chahiya y lo.
+
+1. Client = internet p to lakho system h, to kaise pata lagega y kis server k pass jayegi to iske liye Domain nam k 
+   >> apne jaise hi request bheji to sbse phle y gyi DNA system p jaha apki request resolve hui.
+      >> to sbse phle ise request ko (DOMAIN NAME RESOLUTION) namk process s gujara gya
+         >> jaha p y (www.google.com) wali request ko ek particular address m convert kiya gya.
+            >> or y address kiska h, to y specific server wali machiine k h.
+                >> ab exact serve wali machine p aa chuke h, or 
+                    >> or server k pass jo v request ayi h, oo server process kr rha h, or jo v response h, oo waps client k pass bhej rha h.
+
+
+
+2. Server = kch v kr skta h, lets say autontication check/database se koye chiz fetch krwana /kise v trh k crud operation krwana y sab.
+
+

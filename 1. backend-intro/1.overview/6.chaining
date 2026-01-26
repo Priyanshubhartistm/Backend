@@ -1,0 +1,7 @@
+// Chainning process            = iske andr aap cahe to app ko hata skte h
+
+put('/items/:id', (req,res) => {
+  res.send("got a PUT request");
+}).delete('/items/:id', (req,res) => {
+  res.send("got a DELETE request");
+})

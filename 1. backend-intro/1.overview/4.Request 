@@ -1,0 +1,54 @@
+//  Request / Response / Testing / Routing in ExpressJS
+
+1. npm init -y                 = for creating package.json
+2. npm install express         = for node modules
+3. npm install nodemon         = for automatically reset (means hame br br code change krne pr,apne application ko restart krn pad raha tha, khud se restart ho jaye , uske liye iska use hota h )
+4. npm run dev                 = krne p basic backend application badhiya chal rhi hame
+
+
+1. How many types of Request recive on server :-
+i) GET        = for data fetch krne ke liye.Most of the time iska use hi hota h.
+ii) POST       = bhut sara data kahi p save krwana chahte h, kahi par , kch new entry create krna chahte h, kahi par to waha p post Request k use kr rhe hote h.
+iii) PUT       = jo already exisiting items h, uska update krna chahta h, to waha p put Request k aap use kr rhe hote h.
+iv) DELETE     = exisiting item ko delete krn chhahte ho to, iska use krte h.
+
+
+2. Postman ka use kyun karte hain?
+
+API sahi kaam kar rahi hai ya nahi
+✔ Data bhej rahe (POST)
+✔ Data la rahe (GET)
+✔ Data update (PUT/PATCH)
+✔ Data delete (DELETE)
+✔ Token / Auth test karna
+✔ Error dekhna (400, 500 etc)
+
+3. Browser me sirf GET check hota
+But Postman se tum:
+GET
+POST
+PUT
+DELETE
+sab check kar sakti ho 
+
+
+request ki kahani
+
+app.get('/', (req, res) => {
+  // res.send("got a GET request");
+  // res.sendFile(__dirname + '/dummy.html');
+  res.endFile(__dirname + '/index.html');
+});
+
+app.post('/items', (req,res) => {
+  // res.send("got a POST request");
+  res.json({x:1, y:2,  });
+})
+
+app.put('/items/:id', (req,res) => {
+  res.send("got a PUT request");
+})
+
+app.delete('/items/:id', (req,res) => {
+  res.send("got a DELETE request");
+})

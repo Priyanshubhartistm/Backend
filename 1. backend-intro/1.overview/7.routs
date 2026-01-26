@@ -1,0 +1,64 @@
+// express router          = k use krke in routs ko kaise use krke optimize way m use kr skta hu, apne folder apne project k andr.
+
+itna sara code to ham likh ni skte h, y sb to bht lenghty h jayega.
+   >> bht jda unorganized ho jayega, its not the best way to right code.
+
+app.get('/', (req, res) => {
+  // res.send("got a GET request");
+  // res.sendFile(__dirname + '/dummy.html');
+  res.endFile(__dirname + '/index.html');
+});
+
+app.post('/items', (req,res) => {
+  // res.send("got a POST request");
+  res.json({x:1, y:2,  });
+})
+
+app.put('/items/:id', (req,res) => {
+  res.send("got a PUT request");
+})
+
+app.delete('/items/:id', (req,res) => {
+  res.send("got a DELETE request");
+})
+
+
+1. Best tarika for routing :- jiske through mai apne pure folder ko v organized/coustmized rakh skta hu.
+    >> pure k port folder stracture ko hi optimize rakhna h, wahi hame sikhna h.
+
+2. aap different - different types k router file bana skte h, apne pages y features ke liye.
+   >> jaise maine items ke sare k sara routs ko load krwa liya h, yaha page
+      >> app.use('/api', item);
+
+EXAMPLE:-
+
+const express = require('express')
+const router = express.Router()
+
+// define the home page route
+router.get('/', (req, res) => {
+  // res.send("got a GET request");
+  // res.sendFile(__dirname + '/dummy.html');
+  res.sendFile('../dummy.html', { root: __dirname + '/../' });
+});
+
+router.post('/items', (req,res) => {
+  // res.send("got a POST request");
+  res.json({x:1, y:2,  });
+})
+
+router.put('/items/:id', (req,res) => {
+  res.send("got a PUT request");
+})
+
+router.delete('/items/:id', (req,res) => {
+  res.send("got a DELETE request");
+})
+
+module.exports = router
+
+3. index.js me isko add krenge, 
+  >> // import item ki router file
+const item = require('./routes/item');
+// load into application
+app.use('/api', item);
