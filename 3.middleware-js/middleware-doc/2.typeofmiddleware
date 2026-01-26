@@ -1,0 +1,23 @@
+// Types of middleware:- mainly 5 Types
+
+1. application level middleware          = ave jo use kiye , jisme aap.use(validateMiddleware); y sb tha application
+2. router level middleware               = isme .router k use krte h,load krwane ke liye.
+3. error handling middleware             = 
+4. built - in middleware                 = jo already bane huye, bs use krnh .express.js
+5. third - party middleware              = koye bhari middleware jisko ham use krna chahte h, jaise cokkies
+                                          
+2. router level middleware  :- isme bas aap , app. ki jhugh p router. kr dete h.
+        >> router.use((req, res, next) => {
+            >> application m app. k andr or route m router. k andr bas
+3. error handling middleware 
+       >> 
+
+
+5. third - party middleware  :- ko phle install krna pad raha h, fir aap apne app m isko load krwa pa rhe h.
+         >> koye or package jiska aap use kr rhe h,jo third party k andr aa jata h.
+         >> 3rd party package use krne k bad ap isko use kr pate h.
+
+IMPORTANT :- ROUTE - SPECIFIC MIDDLEWAREs (in industry mostly usesd)
+yaha p ham 2 path bana lete h, means route./student, /admin
+      >> /Student    = isko bas student hi dekha skta h,admin ni.
+      >> /Admin      = isko bas admin hi dekha skta h, student ni .

@@ -1,0 +1,103 @@
+// MIDDLEWAREs in ExpressJS      = NT, This is a look like function. ek trh k function hi hoga, kb use m ayega oo ham discuss kr lete h.
+
+1. abhi tak maine ek get request laga di,kn si path /kn si route ke liye.
+   >> jaise hi yha pr request recive hoti thi to ,jo v apne call back function lagya hota tha, oo execute ho jati thi.
+       >> get('/')  () => {
+        .....                 y wala execute ho jati thi
+       }
+
+2. Ek trh se ek request recive hui, 
+    >> or o request kch kch processing hui or 
+       >> kch processing hone k bad apka response send ho gya.
+
+3. MIDDLEWAREs = k use tb ata h, jb request recive hone k just bad or processing start hone se just phle y jb 
+       >> bich wala jo area h, dono k bich k usko bolte h.
+          >> ab tm deside kr lo lets say tm request m koye change krna chaha rahe ho to kr skte ho.
+             >> lets say request ko use krke tm koye data print/lock krna chaho tm kr skte ho.
+                >> lete se tm data ko verify krna chahe ho request k andr aya y ni, sahi aya y ni oo kr skte ho.
+                  >>  lets validation check ki koye data empty to ni aya h, oo v tm kr skte ho.
+                
+4. Response ki kch cycle hoti thi ki apne ek request bheji or apki kch kch processing hui or apko, ek response mila uske bich
+   >> m ek or layer apne add kr di h, or ise layer ko aap MIDDLEWAREs kah rhe h.
+      >> ki jaise hi request recive hogi mere application pr to use request ko 
+         >> validate/error handling/log/autonatication/autorization k kam y fir koye code execute krne k kam ap kr skte h, 
+            >> using MIDDLEWAREs function.
+
+5. MIDDLEWAREs = are nt its is  a function jisko aap use kr skte h, response - request k cycle k bich m.
+     >> or iske through partion/login/validation
+
+6. EXAMPLE FOR MIDDLEWAREs   = lest say ek website h, waha p code/admin k ek path h, waha bs admin hi ja skta h, or use data ko dekh skta h.
+   >> student ni dekha skta h, q ki usko access ni h, ise path ka
+      >> ab kaise pata lagega ki , /admin p request ayi h,  to usko data dikhan h, y ni to 
+        >> ** TO yahi p tmne ek MIDDLEWAREs lagya hoga , or wahi role check krta hoga ki, agr use admi k role admin h, to response do, student h, to mt do
+
+7. MIDDLEWAREs work
+execute any code
+make change of the request and response
+end the request-response cycle(on tha spot khtm kr skta h)
+call the next MIDDLEWAREs in the stack
+
+8. aapna MIDDLEWAREs likhne se phle kch inbuilt MIDDLEWAREs k use krenge
+
+aapke body m jo v json aya h, usk pass krne ke liye ham inbuilt MIDDLEWAREs k use krte h.
+  >> express.json()    
+     >> loading middleware into the application
+         >> app.use(express.json());
+
+Ave aapne dekha inbuilt middleware agr aap apne code m json k sath deal kr rhe h, to usko ek valid js. m convert krne ka km middleware krta h.
+    
+    
+9. Creating middleware khud se ek ham create krenge, 
+i) Logging            = for data k request type kya h. y fir loggin krwana (mean print krwana)
+ii) autonatication    = autonatication k v middleware bnungi mai , ki autonatication sahi s ho rhi h, y ni
+iii) validation       = k v ek middleware     
+    
+10. ave tak ham bs normally dekhte the request ati thi app processing krte the or aap response return krte the 
+   >> but now request ayegi or inbetween mai kch 
+   i) logging krungi  
+   ii) fir autonatication wala step
+   iii) fir validation wala step
+    
+** or uske bad jake response return hoga.
+
+11. ave tak bs request- response cycle ise trh se hoti thi, request yah se ayaa or response send ho gya.
+
+To ab uske andr 3 middleware (loggin/autonatication/validation) maine add kr diye.
+
+12. Phle aapke pass ise path ('/) p request ati thi or aap sidha responsehit krte the. but now,
+    >> koye request ayi ab sidha response hit ni hogi, 
+       >> request ane k bad in case koye middleware attached h, to middleware chalenge sare k sare uske bad ant m jake.
+          >> apka y route hit handler hit hone wala h.
+
+13. End the request-response cycle.              = agr mai chahu to khud s kvi v response end kr skta hu, middleware k through.
+   >> isme aapka request route tak pahuchega hi ni use phle hi laut jaeyga.
+      >> res.send("chlo sidha ghar"); y print ho jayega,
+         >> but y ni hoga print ab router wala , hello world ho uske niche kch v
+            >> apke request route handler tak pahucha hi ni h.
+
+   const validateMiddleware = (req, res, next) => {
+   console.log("Validating krra hu");
+   next();
+};
+app.use(validateMiddleware);
+
+const authMiddleware = (req, res, next) => {
+  console.log("Authenticating krra hu");
+  res.send("chlo sidha ghar");
+//   next();
+};
+app.use(authMiddleware);
+
+
+14. example       = agr aap koye website p gye or aap logedin h, to hi use website ko khol skte h,otherwise oo apko login page p leke chala jaega.
+      >> to wahi chiz kn krta h, middleware; ki apne logedin ni kiya , q ki use pta lag gya, ki aap ni ho loggin 
+         >> to usne sidha apko redirect kr diya logged in page pr,ki ja loggedin hoke aa.
+
+
+15. IMPORTANT    = aap jis trh se apne middleware ko load krwyenege usi trh se oo load kr rha hoga.
+
+app.use(validationMiddleware)
+app.use(loggingMisslware)
+
+ise order m output v ayega, to iska dhayn rakhan h.
+
