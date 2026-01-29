@@ -17,7 +17,3 @@
          >> koye or package jiska aap use kr rhe h,jo third party k andr aa jata h.
          >> 3rd party package use krne k bad ap isko use kr pate h.
 
-IMPORTANT :- ROUTE - SPECIFIC MIDDLEWAREs (in industry mostly usesd)
-yaha p ham 2 path bana lete h, means route./student, /admin
-      >> /Student    = isko bas student hi dekha skta h,admin ni.
-      >> /Admin      = isko bas admin hi dekha skta h, student ni .
