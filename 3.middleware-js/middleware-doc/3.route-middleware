@@ -1,10 +1,15 @@
+IMPORTANT :- ROUTE - SPECIFIC MIDDLEWAREs (in industry mostly usesd)
+yaha p ham 2 path bana lete h, means route./student, /admin
+      >> /Student    = isko bas student hi dekha skta h,admin ni.
+      >> /Admin      = isko bas admin hi dekha skta h, student ni .
+
 // lets apko ek page tabi dikhega jab app loggedin hoge, otherwise ni.visible hoga
 
 or usko redirect kr diya jayega, sidha login page pr,ki phle aap login krke aao fir y wala page dikhyenge. 
   
 1. MIDDLEWAREs Ka kya flow hoga?
 
-i) ki user ayega to , aate hi sbse phle check krungi user autontic h, y ni
+i) ki user ayega to , aate hi sbse phle check krungi user authanatic h, y ni
   >> y loggedin h, ki ni agr hoga to , mai check krungi ki oo y /student wale path p ja rha h, to student h,ki ni,q ki mai sirf student ko hi bhejungi.
      >> same admin ke liye v
         >> to 3 middleware chahiye bas. 
@@ -13,4 +18,10 @@ a) auth
 b) admin
 c) student
 
-ii) 
+ii) One more tarika of routes middleware likhne k            = best tarika , phle autonatication /student check hoga to hi isko ise wale route m bheja jayega.(RES<RES)
+router.get("/student", auth, isStudent,(req, res)=> {})
+       >> ki aap router k andr hi mention kr do ki ise wale path(/student) ke liye.
+          >> phle y wala middleware (auth), chalega.
+             >> fir y wala (isStudent) wala chalega
+                >> fir y route (req, res) handler chalega.
+
