@@ -1,0 +1,35 @@
+// mongodb
+
+How to connect MongoDB Compass:-
+1. go to terminal
+2. MongoDB Service Start Karein 
+sudo systemctl start mongod
+3.Status Check Karein
+sudo systemctl status mongod
+
+
+How to Connect to ClusterOne:-
+1.mongodb atlas login
+2. click on create ClusterOne
+3. chosse free version and write name.
+4. then fill the section of connect cluster
+5. copy the connection string + with your own password.
+6. then go to mongodb compass , click on add new connection(paste this link with pass)
+7. then save and click.
+
+
+1. Local machine
+ave tak ham apne mongodb m jo v changes kiye o ek meri local machine thi iske resources use ho rhi thi,
+  >> or jo mera y mngo db tha oo yaha p setup tha.
+    >> or se interact mai  mongodb compass k daurya kiya jata tha.
+
+2.Cloud instance
+ise bar cloud k resources use ho rhe h,local machine k ni ho rhe h.
+   >> or bich m mera mongodb setup h, or ise interaction kaise krungi , mai to compass k through.
+
+How to view your data:- major 3 types of view data
+1. In compass m v view kr skte h, apne data ko
+2. In atlass dashboard.yani apne cloud instance par view kr  skte h. 
+     >> (BROWSE collection m jake) ab apne data ko cloud instance p save krwa diya.
+3. In vs code m v mongo db se connect kr skte h.copy the connection string + with your own password.
+     >> click on pati icon or check your dat.
