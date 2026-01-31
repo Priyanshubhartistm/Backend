@@ -1,0 +1,22 @@
+// mera jo backend h, o database se communicate krne ke liye. Bich m ek layer k use kr rha hota h, Mongoose.
+
+
+1. What is mongoose
+2. ODM(object-data-modeling)
+3. Schema
+4. Model
+
+1. What is mongoose        = Mongoose ek yasi library h, jiska use apki backend application krti h, data base se communicate krne keliye.
+                            >> y backend or mongodb k bich k translation wali part ko sambhalti h.
+                                >> y fir ek interface k y kam kr rhi h, jiska backend application communicate kr paye database k sath.
+
+2. ODM                      = backend application object k sth deal krti h, or database documents ke sath.
+                               >> to y object like structure h, jiseke sath interaction ho rha h, agr y mai  send krt hu database ko kht hu, ki isko store kr lo to y translation k kam jo h, oo mongoose krta h,that's why say odm.
+
+3. Schema                   = Blueprint/templete/description means maine user nam k k ek collection banya h, uske andr documents store ho rhe h. doc1/2/3; ab documents k andr data kasie dikhta hoga
+                                >> uske andr {name, age, height} andr ky - ky data hoga or kis type k hoga usko Blueprint khte h.
+
+4. Model                    = Model jo hota h, apke Schema ko utilize krt h, to interact with db.
+                                >> model means ek tool box , iske andr bht sare tools h.
+                                   >> oo tool ky h? ki model k through ab mongodb k andr kch new create kr skte ho. 
+                                      >> model k use krke aap mongodb k andr view/create/update/delete/ kr skte hh.

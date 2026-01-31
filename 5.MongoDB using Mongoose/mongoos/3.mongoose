@@ -1,0 +1,16 @@
+1. Cureently backend running status p chal rhi h, ab sessrver p no problm.
+
+2. or mera backend application indirectly mongodb s v connect h.
+
+3. ab mai chahti hu, database k andr CRUD Operation perform karu.
+
+4. But CRUD k liye model ki need padne wali h.
+
+5. Or model banane k liye mujhe schma ki need padne wali h.
+    >>usermodel.js m maine schme k use krke maine khud k ek model create krwa liya.or usko export kr diya.
+
+
+// CONCULSION 
+1. database se connect krn                       = connectdb();
+2. model create krn
+3. Operation perform krn chahete h, to routes m dekhenge.

@@ -1,2 +1,40 @@
-// mongo db
+// mongo db  = db means data base
+>> mtlb data means apne data k organized form m store kiya hua h.use store ko db kah diya.
+
+1. what is mongodb?
+2. what is atlas
+3. how to setup mongodb compass
+
+
+
+1. what is mongodb?
+db are mainly two types:-
+i) sql
+ii) no sql
+
+i) sql            = isme har data ko row, column k format m likha jata h.har ek new data k liye ek new row banya jata h.
+
+ii) no sql        = isi trh se isme har ek data apka documentry hota h.
+mongodb are nosql db.jiske andr data documentation k format m store hota h.
+   >> y fir json like format k andr store hota h.and json like structure m.
+
+mongo db ko mai chahu to apne system p hi utilize krke host krwa skti hu.y fir local setup bhi kah skte h.
+
+2. what is atlas                            = ave jo hamne mongodb setup kiya h, use machine k resources ko hi mera mongodb use kr rha h, to ham kah skte h, ki mera mongodb local resources ko hi use kr rha h, to but
+    >> yaha p mai boli ki yha p y cloud h, or y mongodb mere cloud k resources ko hi use kr rha h, to 
+       >> to y kis trh se achieve kiya ja skta h, 
+           >> cloud instance par kaise mongodb setup krte h.
+               >> q ki isko hm pane machine p to ni hi chalyenge hamesa, kl ko isko cloud instance pe hi chalyeneg.
+               
+
+
+3. how to setup mongodb compass             = this is a tool. isme ek gui means graphical user interface, jiska use koye v kr skta h. like begginer friendly h, y
+>> isme hamne sikha ki kasie aap mongo db k use krke ek data add/create kr skte h.
+
+i) dbOne ek trh k connection h.iske andr 3 trh ki phle se generated databases h.
+   >> admin, config,local
+      >> local k andr = user nam k collection h.
+         >> collection k andr apka 1/2 kitn v document ko add kr lo.
+
+4. kaise code k help se hm mongo db me crud operation kr skte h.
 
