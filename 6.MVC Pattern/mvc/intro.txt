@@ -1,0 +1,17 @@
+// MVC = KIS TRH SE APKE REQUEST OR RESPONSE K FOLLOW CHALTE H, APKE PROJECT K ANDR , kaise aap apne project ko ek optimal strucutre provide kr skte h.
+          >> jise kl koye v new person ise project ko dekhega to aap bologe ki mera jo y project h, oo MVC patter ko follw kr rha h,to ise bht easy ho jayega
+             >> andr kis trh se execution chal rh h,samjhne m.
+
+1. What is MVC
+2. kaise ham apne execution follow ko easy bana dete h, understanding and for tracking.
+3. whats the benifits
+
+1. What is MVC                       = Model,view,controller
+Model                                = db se interact krne k tarika hota h.& jo v data lgic hoga oo deside krta h, ki bhia mai data save/delete/find/update krwana chahta hu
+exact tools,exact method oo sb Model k pass hote h.
+
+view                                 = vht jda similar to the ui-ux se, 
+
+controller                           = y business logic contain krta h.koye extra operation ho, y kch validation krn hoga.
+
+
