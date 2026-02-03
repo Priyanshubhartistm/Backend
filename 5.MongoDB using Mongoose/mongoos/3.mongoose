@@ -12,5 +12,5 @@
 
 // CONCULSION 
 1. database se connect krn                       = connectdb();
-2. model create krn
+2. model create krn      // deep in 4.model
 3. Operation perform krn chahete h, to routes m dekhenge.

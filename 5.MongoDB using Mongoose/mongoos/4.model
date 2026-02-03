@@ -1,0 +1,50 @@
+// from - usermodel.js
+
+1. ise file m maine sbse file schema create kiye iske andr ek blueprint hota h, jisme aap bate h, ki ky ky chiz hongi apki document me.
+       >> yani apki document k data m, or kis type ki data hogi. maine kha h,name,age y sb hoga.
+
+2. fir model banake hamne isko export kr diya.
+        >> module.exports = Usermodel;
+
+3. Basically hamne model or schema dono k dono destructure krwa liye h. 
+       >> const {schma, model} =
+
+4. Or fetch krwa li h, mongooes wali library sb 
+      >> require('mongoose');
+
+5. schema k use krke hamne ek new schema create krwa liya, 
+     >> const userSchema = new schema({
+    name: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    date: {
+        type: Date,
+        default: Date.now
+    }
+});
+
+iske andr define kr di,pura k pura blueprint ,ky ky chiz mujhe chahiye, 
+
+6. ise schema k use krke maine khud k ek model create kr liya. 
+     >> const Usermodel = model('User', userSchema);
+
+
+7, or use model ko maine export krwa liya.
+    >> module.exports = Usermodel;
+
+conclusion
+>> 1 phle schema create kiya 
+>> 2 maine fir schema  k use krke model create kiya
+>> 3 or model ko maine export krwa liya kl ko mujhe jab v need padegi ise model ko use krne ki to 
+>> 4 maine already export ki hui h, bs isko include krna hoga or mera kam ho gya.
+
