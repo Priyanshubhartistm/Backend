@@ -1,0 +1,26 @@
+** CONCLUSION = 
+1.kis trh s aap code k throgh db.js file likh skte h, agian y file hamesa same rhegi bs monodb URI change ho jayegi.
+2. db.js m hmesa ek function write down krn h, ise function k km bs itna h, ki oo mongodb se connect krwata .apki application ko
+3. index.js m = connectDB() KO call krke ise function ko apne application se connect krwana h.
+4. ab mongodb k koye v data aap save kroge to definitly apko blueprint pta hona chahiya, or model pta honi chahiya taki db se aap interact kr paye.
+5. to apne (model.js) model or schema dono hi create kr liya h. 2ready h, 
+6. isko utlilize krke hm yaha(user.js) p api write down kr rhe h.
+
+
+// aapne isme sikh ki kis trh se aap apne code k through apne database se connect kr skte ho, aur usme data store kr skte ho, aur usko read kr skte ho, update kr skte ho, delete kr skte ho.
+
+// isme humne ek user model banaya, usme name, age, weight field hai, aur uske through hum apne database me data store kr rhe hai, aur usko read kr rhe hai, aur delete kr rhe hai.
+
+// isme humne ek route banaya, jisme hum apne database se data read kr rhe hai, aur usko json format me return kr rhe hai, aur ek route banaya jisme hum apne database me data store kr rhe hai, aur ek route banaya jisme hum apne database se data delete kr rhe hai.
+
+// isme humne ek db.js file banayi, jisme humne apne database se connect krne ka logic likha hai, aur usko index.js file me import krke use kiya hai.
+
+// isme humne ek routes folder banaya, jisme humne apne routes ko organize kiya hai, aur usme user.js file banayi, jisme humne apne user related routes ko likha hai.
+
+// isme humne ek index.js file banayi, jisme humne apne express app ko create kiya hai, aur usme apne routes ko use kiya hai, aur usme apne database se connect krne ka logic likha hai, aur usme ek home page route banaya hai, jisme humne ek message return kiya hai.
+
+// isme humne ek db.js file banayi, jisme humne apne database se connect krne ka logic likha hai, aur usko index.js file me import krke use kiya hai.
+
+// isme humne ek routes folder banaya, jisme humne apne routes ko organize kiya hai, aur usme user.js file banayi, jisme humne apne user related routes ko likha hai.
+
+
