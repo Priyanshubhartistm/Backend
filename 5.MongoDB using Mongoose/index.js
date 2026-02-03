@@ -3,6 +3,10 @@ const express = require('express');
 const app = express();
 const connectDB = require('./db');
 
+const user = require('./routes/user');
+
+app.use('/api', user);
+
 
 const PORT = 3000;
 
