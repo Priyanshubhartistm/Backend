@@ -10,8 +10,29 @@
 Model                                = db se interact krne k tarika hota h.& jo v data lgic hoga oo deside krta h, ki bhia mai data save/delete/find/update krwana chahta hu
 exact tools,exact method oo sb Model k pass hote h.
 
-view                                 = vht jda similar to the ui-ux se, 
+view                                 = bht jda similar to the ui-ux se, 
 
 controller                           = y business logic contain krta h.koye extra operation ho, y kch validation krn hoga.
 
+MVC Design pattern ek yasa pattern h, jo industry m bht jda use hoti h, 
+      >> q use hota h, q ki isme hamne ek fayda milt h, SOC
+         >> SOC means sepration of concern ki entire logic, (business logic) m deside krega, or entire db interaction (data logic) m deside kregi. entire (user-interface) view m deside krne wala h. 
+            >> to aapne user-interface, db & data logic and business logic , 3ko alg alg seprate kr diya h,
+               >> to aapne sepration of concern wala concept bht ache se follow kiya h. 
+                  >> apka code definitly modular hone wala h, apki mentability,flexibility of the code definitly badhne wali h, 
+                     >> apka project kafi maintable ho jayega. ise pattern ko use krne se.
+                        >> and kl ko koye new user join krta h, to mai usko apna code provide krta hu, chahe oo kitn v massive ho, agr mai kahu mvc pattern follow ho rha h, to samjh jayega ki kaise RESPONSE and REQUEST ati h.
 
+i) frontend        = maine isme ek button p click kiye, uske click p maine koye api call kiya to
+
+ii) backend        = ab y api defentily mere backend k andr h, isme mai (/user) wali api call kari to ise wale route p aa gya, 
+
+iii) route         = specific route p hit krte hi, apko controller p bhej diya jata h.
+
+iv) controller     = controller m apka koye v business logic likh hua h, koye v processing/validation kr rhe h, to oo hoti h.
+
+v) model           = lets say controller aapke model k use krke DB k sath kch interaction krna chahta h, oo v ho jata h.
+
+vi) business logic  = lets say db s koye response wapas aata h, or aap uske sath koye n koye business logic run krna chahte h, oo v yahi p hota h.
+
+vii) client         = y sb khani k bad response generate ho jata h,jaha aapke frontend y client ko send kr diya jata h. 
